@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advice Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="languages">
+            <select name="select-language" id="select-language">
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+            <button id="switch-language">
+                <i class="fa-solid fa-language"></i>
+            </button>
+        </div>
+        <div id="card">
+            <div class="card-content">
+                <div class="card-header">
+                    <h1><span>Advice</span> <span class="id_advice"></span></h1>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"></p>
+                </div>
+                <div class="card-footer">
+                    <div class="divider">
+                        <i class="fa-solid fa-pause"></i>
+                    </div>
+                    <button class="btn-generate" id="btn-generate">
+                        <i class="fa-solid fa-dice-five"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202632;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.languages {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.languages button {
+  border: none;
+  border-radius: 3px;
+  padding: 8px;
+  background-color: #222;
+  cursor: pointer;
+  color: #52fbac;
+}
+
+.languages #select-language {
+  display: none;
+  background-color: #fff;
+  font-family: "Nunito", sans-serif;
+  padding: 4px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#card {
+  font-family: "Nunito", sans-serif;
+  background-color: #313a49;
+  border-radius: 10px;
+  padding: 2rem 20px;
+  max-width: 480px;
+  width: 100%;
+}
+
+#card .card-header h1 {
+  color: #52fbac;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#card .card-body {
+  margin: 16px 0;
+}
+
+#card .card-body .card-text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#card .card-footer {
+  position: relative;
+}
+
+#card .card-footer .divider {
+  color: #ffffff;
+  position: relative;
+  top: 10px;
+}
+
+#card .card-footer .divider i {
+  font-size: 1.3em;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #313a49;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+#card .card-footer .divider::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 0.4;
+  position: absolute;
+  top: 15px;
+}
+
+#card .card-footer .btn-generate {
+  background-color: #52fbac;
+  color: #222;
+  height: 50px;
+  width: 50px;
+  font-size: 1.6em;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 100ms ease-in background;
+  cursor: pointer;
+  outline: none;
+}
+
+#card .card-footer .btn-generate:hover {
+  background-color: #18da7f;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0 5px;
+  }
+  #card {
+    padding: 2rem 10px;
+    margin: 0 10px;
+  }
+}
