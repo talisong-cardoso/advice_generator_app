@@ -4,6 +4,8 @@ const cors = require("cors");
 const path = require("path");
 const translate = require("@vitalets/google-translate-api");
 
+const PORT = process.env.PORT || 3000;
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   app.use(cors());
@@ -27,4 +29,4 @@ app.post("/", async (req, res) => {
   }
 });
 
-app.listen(3000, console.log("server running"));
+app.listen(PORT, console.log("server running"));
